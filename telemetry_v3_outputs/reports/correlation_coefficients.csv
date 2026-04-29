@@ -1,0 +1,29 @@
+device,signal,model,pearson_r
+iPhone,latency,Rolling Mean,0.3791
+iPhone,latency,ARIMA,0.2777
+iPhone,cpu_usage,Rolling Mean,0.5524
+iPhone,cpu_usage,ARIMA,0.4422
+iPhone,temperature,Rolling Mean,0.2791
+iPhone,packet_loss,Rolling Mean,0.1347
+iPhone,anomaly_label,Autoencoder,0.4512
+MacBook,latency,Rolling Mean,0.3493
+MacBook,latency,ARIMA,0.2448
+MacBook,cpu_usage,Rolling Mean,0.5685
+MacBook,cpu_usage,ARIMA,0.4897
+MacBook,temperature,Rolling Mean,0.2726
+MacBook,packet_loss,Rolling Mean,0.1372
+MacBook,anomaly_label,Autoencoder,0.4787
+Apple Watch,latency,Rolling Mean,0.3606
+Apple Watch,latency,ARIMA,0.2432
+Apple Watch,cpu_usage,Rolling Mean,0.5425
+Apple Watch,cpu_usage,ARIMA,0.5808
+Apple Watch,temperature,Rolling Mean,0.261
+Apple Watch,packet_loss,Rolling Mean,0.1463
+Apple Watch,anomaly_label,Autoencoder,0.5075
+iPad,latency,Rolling Mean,0.3227
+iPad,latency,ARIMA,0.2202
+iPad,cpu_usage,Rolling Mean,0.5439
+iPad,cpu_usage,ARIMA,0.5747
+iPad,temperature,Rolling Mean,0.2572
+iPad,packet_loss,Rolling Mean,0.144
+iPad,anomaly_label,Autoencoder,0.5281

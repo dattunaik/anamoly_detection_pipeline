@@ -1,0 +1,9 @@
+Detector / Definition,Apple Watch,MacBook,iPad,iPhone,TOTAL,%
+σ From Mean of Data,122,130,111,106,469,3.91%
+σ From Mean of Errors,89,88,92,83,352,2.93%
+Nonparametric Dynamic Thresholding,191,172,184,184,731,6.09%
+RRCF Anomaly Score,150,150,150,150,600,5.00%
+Risk Score Vote,245,249,199,207,900,7.50%
+CSAF Vote,84,86,77,65,312,2.60%
+Ensemble Final,145,146,134,133,558,4.65%
+Ground Truth Injected,150,150,150,150,600,5.00%

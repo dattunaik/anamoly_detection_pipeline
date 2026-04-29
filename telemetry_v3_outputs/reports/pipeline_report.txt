@@ -1,0 +1,86 @@
+
+═════════════════════════════════════════════════════════════════
+  TELEMETRY ANOMALY DETECTION  v3.0  —  PIPELINE REPORT
+  Generated : 2026-04-29 12:39:55
+═════════════════════════════════════════════════════════════════
+
+  ARCHITECTURE
+─────────────────────────────────────────────────────────────────
+  Phase 1 — Models of Normal
+     Rolling Mean Model       (window=50)
+     ARIMA(2, 1, 2) Model
+     Autoencoder              (latent=8-D compressed feature vectors)
+  Phase 2 — Anomaly Definitions
+     σ's From Mean of Data    (k=3.0)
+     σ's From Mean of Errors  (k=3.0)
+     Nonparametric Dynamic Thresholding  (window=50)
+     RRCF Anomaly Scores      (trees=40, shingle=8)
+  Fusion
+     Risk Scorer + CSAF + Ensemble Voting (min_votes=2)
+
+  DATASET
+─────────────────────────────────────────────────────────────────
+  Total rows          : 12,000
+  Devices             : iPhone, MacBook, Apple Watch, iPad
+  OS versions         : iOS 18.3, iOS 18.4, iOS 18.5
+  Injected anomalies  : 600  (5.0%)
+
+  PHASE 1 — CORRELATION COEFFICIENTS
+─────────────────────────────────────────────────────────────────
+  ARIMA                cpu_usage      r=0.5218
+  ARIMA                latency        r=0.2465
+  Autoencoder          anomaly_label  r=0.4914
+  Rolling Mean         cpu_usage      r=0.5518
+  Rolling Mean         latency        r=0.3529
+  Rolling Mean         packet_loss    r=0.1406
+  Rolling Mean         temperature    r=0.2675
+
+  PHASE 2 — ANOMALY DETECTION RESULTS
+─────────────────────────────────────────────────────────────────
+  Final anomalies     : 558  (4.7%)
+  ROC-AUC             : 0.7123
+  Average Precision   : 0.1686
+  F1-Score            : 0.6097
+  Precision           : 0.6326
+  Recall              : 0.5883
+  False Positive Rate : 0.0180
+
+  COUNTS OF ANOMALOUS POINTS
+─────────────────────────────────────────────────────────────────
+  σ From Mean of Data                    Total=   469  (3.91%)
+  σ From Mean of Errors                  Total=   352  (2.93%)
+  Nonparametric Dynamic Thresholding     Total=   731  (6.09%)
+  RRCF Anomaly Score                     Total=   600  (5.00%)
+  Risk Score Vote                        Total=   900  (7.50%)
+  CSAF Vote                              Total=   312  (2.60%)
+  Ensemble Final                         Total=   558  (4.65%)
+  Ground Truth Injected                  Total=   600  (5.00%)
+
+  SEVERITY BREAKDOWN
+─────────────────────────────────────────────────────────────────
+  CRITICAL        0  ( 0.00%)
+  HIGH            0  ( 0.00%)
+  MEDIUM        404  ( 3.37%)
+  LOW           154  ( 1.28%)
+  NORMAL     11,442  (95.35%)
+
+  ALERTS
+─────────────────────────────────────────────────────────────────
+  Total alerts        : 558
+  MEDIUM        404
+  LOW           154
+
+  OUTPUTS SAVED TO → telemetry_v3_outputs/
+─────────────────────────────────────────────────────────────────
+  models/rolling_mean_stats.csv
+  models/arima_fits.csv
+  models/arima_models.pkl
+  models/autoencoder_models.pkl
+  features/compressed_feature_vectors.csv
+  reports/correlation_coefficients.csv
+  reports/anomaly_counts.csv
+  anomalies/alerts.csv
+
+═════════════════════════════════════════════════════════════════
+  Pipeline complete.
+═════════════════════════════════════════════════════════════════
