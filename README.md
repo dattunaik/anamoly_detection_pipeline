@@ -55,7 +55,6 @@ Detects latency spikes, CPU anomalies, thermal events, battery drain, network is
 - [Detectors Reference](#detectors-reference)
 - [Evaluation Metrics](#evaluation-metrics)
 - [Visualizations](#visualizations)
-- [Extending the Framework](#extending-the-framework)
 
 ---
 
@@ -385,18 +384,6 @@ Per-detector metrics are printed for all six vote columns, allowing comparison o
 
 ---
 
-## Extending the Framework
-
-**Adding a new detector** — implement the `AnomalyDetector` ABC and add your column to `EnsembleDetector.DETECTOR_COLS`:
-
-```python
-class MyDetector:
-    def detect(self, df: pd.DataFrame) -> pd.Series:
-        # return int Series (1 = anomaly)
-        ...
-
-df["det_my"] = MyDetector(CFG).detect(df)
-EnsembleDetector.DETECTOR_COLS.append("det_my")
 ```
 
 ---
@@ -413,5 +400,4 @@ EnsembleDetector.DETECTOR_COLS.append("det_my")
 Copyright @ Dattu Naik Mudavath
 
 ## AUTHOR   
-
 DATTU NAIK MUDAVATH, SENIOR DATA SCIENTIST
