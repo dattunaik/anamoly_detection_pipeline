@@ -98,7 +98,7 @@ rrcf
 
 ```bash
 # Clone or download the notebook
-git clone <your-repo-url>
+git clone <https://github.com/dattunaik/anamoly_detection_pipeline.git>
 cd telemetry-anomaly-v3
 
 # Install dependencies
