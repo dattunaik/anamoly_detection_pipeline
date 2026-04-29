@@ -9,24 +9,24 @@ Detects latency spikes, CPU anomalies, thermal events, battery drain, network is
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════════════╗
-║               TELEMETRY ANOMALY DETECTION FRAMEWORK  v3.0                       ║
-╠═══════════════════════════════╦════════════════════════════════════════════════╣
-║   PHASE 1 · MODELS OF NORMAL  ║   PHASE 2 · ANOMALY DETECTION                 ║
-╠═══════════════════════════════╬════════════════════════════════════════════════╣
-║                               ║                                                ║
-║  Datasets                     ║  Datasets + Algorithm Fits                     ║
-║     │                         ║  + Compressed Feature Vectors                  ║
-║     ▼                         ║            │                                   ║
-║  ┌──────────────────────┐     ║            ▼                                   ║
-║  │     Algorithms       │     ║  ┌──────────────────────────────────────────┐ ║
-║  │  ┌──────────────┐    │     ║  │         Anomaly Definitions              │ ║
-║  │  │ Rolling Mean │    │─────╫─►│  σ's From Mean of Data                  │ ║
-║  │  ├──────────────┤    │     ║  │  σ's From Mean of Errors                │ ║
-║  │  │    ARIMA     │    │     ║  │  Nonparametric Dynamic Thresholding      │ ║
-║  │  ├──────────────┤    │     ║  │  RRCF Anomaly Scores ◄──────────────────┤ ║
-║  │  │ Autoencoder  │    │     ║  └──────────────────────┬───────────────────┘ ║
-║  │  └──────────────┘    │     ║                          │                     ║
-║  └──────────────────────┘     ║                          ▼                     ║
+║               TELEMETRY ANOMALY DETECTION FRAMEWORK  v3.0                        ║
+╠═══════════════════════════════╦════════════════════════════════════════════════  ╣
+║   PHASE 1 · MODELS OF NORMAL  ║   PHASE 2 · ANOMALY DETECTION                    ║
+╠═══════════════════════════════╬════════════════════════════════════════════════  ╣
+║                               ║                                                  ║
+║  Datasets                     ║  Datasets + Algorithm Fits                       ║
+║     │                         ║  + Compressed Feature Vectors                    ║
+║     ▼                         ║            │                                     ║
+║  ┌──────────────────────┐     ║            ▼                                     ║
+║  │     Algorithms       │     ║  ┌──────────────────────────────────────────┐    ║
+║  │  ┌──────────────┐    │     ║  │         Anomaly Definitions              │    ║
+║  │  │ Rolling Mean │    │─────╫─►│  σ's From Mean of Data                   │    ║
+║  │  ├──────────────┤    │     ║  │  σ's From Mean of Errors                 │    ║
+║  │  │    ARIMA     │    │     ║  │  Nonparametric Dynamic Thresholding      │    ║
+║  │  ├──────────────┤    │     ║  │  RRCF Anomaly Scores  ◄──────────────────┤    ║
+║  │  │ Autoencoder  │    │     ║  └──────────────────────┬───────────────────┘    ║
+║  │  └──────────────┘    │     ║                         │                      ║
+║  └──────────────────────┘     ║                         ▼                      ║
 ║     │                         ║            More Data Files + Plots             ║
 ║     ▼                         ║                          │                     ║
 ║  Data Files + Plots           ║                          ▼                     ║
