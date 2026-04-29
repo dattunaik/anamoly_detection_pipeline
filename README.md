@@ -413,10 +413,8 @@ EnsembleDetector.DETECTOR_COLS.append("det_my")
 
 ---
 
-## License
-
-MIT — free to use, modify, and distribute.
-
+## License & Copyright
+Copyright @ Dattu Naik Mudavath
 
 ## AUTHOR   
 
