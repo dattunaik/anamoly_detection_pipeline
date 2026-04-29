@@ -399,10 +399,6 @@ df["det_my"] = MyDetector(CFG).detect(df)
 EnsembleDetector.DETECTOR_COLS.append("det_my")
 ```
 
-**Adding a new Phase 1 model** — fit your model, write predictions/residuals into the DataFrame, then add the residual column name to the error aggregation in `NonparametricDynamicThreshold.detect()` (it auto-collects any column matching `*resid*`).
-
-**Swapping in real data** — replace the `generate_telemetry()` call in § 2 with your own DataFrame loader. Required columns: `device`, `timestamp`, plus any signals listed in `ae_features` and `arima_signals`. `anomaly_label` is optional (evaluation will be skipped if absent).
-
 ---
 
 ## References
