@@ -386,7 +386,6 @@ Per-detector metrics are printed for all six vote columns, allowing comparison o
 
 ```
 
----
 
 ## References
 
