@@ -401,6 +401,4 @@ Potential future enhancements:
 ---
 
 # Author
-DATTU NAIK MUDAVATH - SENIOR DATA SCIENTIST
-Apple Watch AI Anomaly Detection PoC
-Production-style Healthcare Telemetry Intelligence System
+DATTU NAIK MUDAVATH - SENIOR DATA SCIENTIST 
