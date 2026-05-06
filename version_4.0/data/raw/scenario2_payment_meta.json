@@ -1,0 +1,27 @@
+{
+  "scenario_id": "scenario2_payment",
+  "description": "Apple Pay backend timeout causing payment failures at checkout",
+  "key_signals": [
+    "nfc_latency_ms",
+    "api_latency_ms",
+    "retry_count",
+    "payment_status"
+  ],
+  "run_timestamp": "20260506_111059",
+  "rows": 500,
+  "columns": [
+    "timestamp",
+    "nfc_latency_ms",
+    "api_latency_ms",
+    "retry_count",
+    "payment_status",
+    "label",
+    "scenario"
+  ],
+  "anomaly_ratio": 0.28,
+  "date_range": [
+    "2025-01-01 09:00:00",
+    "2025-01-01 21:28:30"
+  ],
+  "checksum_sha256_16": "9b5b430c69e73e75"
+}

@@ -1,0 +1,27 @@
+{
+  "scenario_id": "scenario4_battery",
+  "description": "Overnight battery drain from runaway background app refresh loop",
+  "key_signals": [
+    "battery_pct",
+    "cpu_pct",
+    "bg_wakeups_per_min",
+    "network_tx_bytes"
+  ],
+  "run_timestamp": "20260506_111059",
+  "rows": 480,
+  "columns": [
+    "timestamp",
+    "battery_pct",
+    "cpu_pct",
+    "bg_wakeups_per_min",
+    "network_tx_bytes",
+    "label",
+    "scenario"
+  ],
+  "anomaly_ratio": 0.875,
+  "date_range": [
+    "2025-01-01 23:00:00",
+    "2025-01-02 06:59:00"
+  ],
+  "checksum_sha256_16": "b3e2638da7e6c833"
+}

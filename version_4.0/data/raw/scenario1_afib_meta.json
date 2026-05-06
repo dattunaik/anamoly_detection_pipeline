@@ -1,0 +1,27 @@
+{
+  "scenario_id": "scenario1_afib",
+  "description": "AFib ECG detection failure during noisy signal \u2014 evening rest session",
+  "key_signals": [
+    "ecg_noise",
+    "rr_interval",
+    "signal_quality",
+    "ecg_amplitude"
+  ],
+  "run_timestamp": "20260506_111059",
+  "rows": 600,
+  "columns": [
+    "timestamp",
+    "rr_interval",
+    "ecg_amplitude",
+    "ecg_noise",
+    "signal_quality",
+    "label",
+    "scenario"
+  ],
+  "anomaly_ratio": 0.3333333333333333,
+  "date_range": [
+    "2025-01-01 20:00:00",
+    "2025-01-01 20:09:59"
+  ],
+  "checksum_sha256_16": "8ab3e6a7607b1fad"
+}

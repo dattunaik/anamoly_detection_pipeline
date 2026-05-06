@@ -1,0 +1,27 @@
+{
+  "scenario_id": "scenario3_sos",
+  "description": "False Emergency SOS triggered during tennis due to misclassified forehand swing",
+  "key_signals": [
+    "g_force",
+    "wrist_velocity",
+    "jerk_magnitude",
+    "context_activity"
+  ],
+  "run_timestamp": "20260506_111059",
+  "rows": 800,
+  "columns": [
+    "timestamp",
+    "g_force",
+    "wrist_velocity",
+    "jerk_magnitude",
+    "context_activity",
+    "label",
+    "scenario"
+  ],
+  "anomaly_ratio": 0.5,
+  "date_range": [
+    "2025-01-01 14:00:00",
+    "2025-01-01 14:01:19.900000"
+  ],
+  "checksum_sha256_16": "6578eecd17a37d76"
+}
