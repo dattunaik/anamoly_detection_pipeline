@@ -1,0 +1,58 @@
+{
+  "run_timestamp": "20260506_111059",
+  "total_rows": 2380,
+  "columns": [
+    "timestamp",
+    "scenario",
+    "metric",
+    "value",
+    "label"
+  ],
+  "scenarios": [
+    "afib_miss",
+    "apple_pay_failure",
+    "false_sos",
+    "battery_drain"
+  ],
+  "scenario_breakdown": {
+    "afib_miss": {
+      "count": 600,
+      "anomaly_count": 200,
+      "anomaly_pct": 33.33
+    },
+    "apple_pay_failure": {
+      "count": 500,
+      "anomaly_count": 140,
+      "anomaly_pct": 28.0
+    },
+    "battery_drain": {
+      "count": 480,
+      "anomaly_count": 420,
+      "anomaly_pct": 87.5
+    },
+    "false_sos": {
+      "count": 800,
+      "anomaly_count": 400,
+      "anomaly_pct": 50.0
+    }
+  },
+  "checksum_sha256_16": "6e5e65ecfbd40970",
+  "groq_model": "llama-3.1-8b-instant",
+  "pipeline_config": {
+    "groq_model": "llama-3.1-8b-instant",
+    "llm_max_tokens": 400,
+    "llm_temperature": 0.1,
+    "llm_retries": 3,
+    "llm_retry_delay": 2.0,
+    "sigma_window": 30,
+    "sigma_n": 2.5,
+    "rrcf_trees": 40,
+    "rrcf_shingle": 8,
+    "rrcf_tree_size": 256,
+    "ae_latent_dim": 4,
+    "ae_window": 16,
+    "ensemble_threshold": 2,
+    "score_percentile": 95.0,
+    "data_root": "./data"
+  }
+}

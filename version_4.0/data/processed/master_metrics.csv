@@ -1,0 +1,5 @@
+Scenario,Key Signal,Sigma F1,RRCF F1,AE F1,Ensemble F1,Stakes
+AFib Miss,ECG Noise +3.4x,0.0569,0.1043,0.1304,0.0654,Clinical / Life Safety
+Apple Pay Failure,API Latency +340%,0.094,0.2303,0.303,0.069,Revenue / SLA
+False Emergency SOS,G-Force +8.3g,n/a,n/a,n/a,FP reduction 100%,Legal / Trust
+Battery Drain,BG Wakeups +890%,0.0141,0.1656,0.1699,0.06,Reliability / Safety
